@@ -1,0 +1,17 @@
+{
+  "verbose": true,
+  "ext": "js html marko json",
+  "ignore": [
+    "*.test.js",
+    "*.marko.js",
+    "dist/*",
+    "*.md",
+    "cache/*",
+    "*.log",
+    "src/*"
+  ],
+  "execMap": {
+    "rb": "ruby",
+    "pde": "processing --sketch={{pwd}} --run"
+  }
+}
