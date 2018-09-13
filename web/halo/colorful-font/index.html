@@ -17,8 +17,8 @@
     margin: 0 auto;
     font-size: 20px;
     font-weight: 600;
-    /* background-image: url(./texture-two.jpg);
-    background-size: cover; */
+    /* background-image: url(./texture-two.jpg); */
+    /* background-size: cover; */
     background:
       linear-gradient(red, transparent),
       linear-gradient(to top left, lime, transparent),
@@ -26,6 +26,57 @@
     background-blend-mode: screen;
     -webkit-background-clip: text;
     color: transparent !important;
+    border: 2px solid #fff;
+
+    animation: evolve 3s infinite;
+	  -webkit-animation: evolve linear 3s infinite;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  .main:hover {
+    border: 10px solid #fff;
+    border-radius: 50%;
+   -webkit-box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+   -moz-box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+   box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+  }
+
+  @keyframes evolve {
+    0% {
+      background: linear-gradient(red, transparent),
+      linear-gradient(to top left, lime, transparent),
+      linear-gradient(to top right, blue, transparent);
+    }
+    20% {
+      background: linear-gradient(red, transparent),
+      linear-gradient(to top left, blue, transparent),
+      linear-gradient(to top right, lime, transparent);
+    }
+    40% {
+      background: linear-gradient(lime, transparent),
+      linear-gradient(to top left, blue, transparent),
+      linear-gradient(to top right, red, transparent);
+    }
+    60% {
+      background: linear-gradient(lime, transparent),
+      linear-gradient(to top left, red, transparent),
+      linear-gradient(to top right, blue, transparent);
+    }
+    80% {
+      background: linear-gradient(blue, transparent),
+      linear-gradient(to top left, lime, transparent),
+      linear-gradient(to top right, red, transparent);
+    }
+    100% {
+      background: linear-gradient(blue, transparent),
+      linear-gradient(to top left, red, transparent),
+      linear-gradient(to top right, lime, transparent);
+    }
   }
   </style>
   <body>
