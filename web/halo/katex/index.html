@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>KetaX使用</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.css"
+      integrity="sha384-JwmmMju6Z7M9jiY4RXeJLoNb3aown2QCC/cI7JPgmOLsn3n33pdwAj0Ml/CMMd1W"
+      crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.js"
+      integrity="sha384-atIluo+2Hixq8HCazSQWa1JjeC5L0CQeWAx74Q+EbqgAW4UixbrBQF4+1jvBX01b"
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <div id="formula">
+
+    </div>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elem = document.getElementById('formula')
+        katex.render("c = \\pm\\sqrt{a^2 + b^2}", elem, {
+          throwOnError: false
+        })
+      })
+    </script>
+  </body>
+</html>

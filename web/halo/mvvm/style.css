@@ -1,0 +1,24 @@
+
+.layer {
+  position: relative;
+  left: 89px;
+  background-color: #889998;
+}
+
+.layer-2 .content {
+  position: relative;
+  left: 89px;
+  background-color: #0ccdde;
+}
+
+#content {
+  width: 300px;
+  height: 300px;
+  overflow: scroll;
+}
+
+#innerContent {
+  width: 500px;
+  height: 200px;
+  background-color: purple;
+}

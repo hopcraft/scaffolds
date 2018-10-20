@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Debounce | Throttle</title>
+  </head>
+  <body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" charset="utf-8"></script>
+    <script src="underscore.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    timePoint = (new Date()).getTime()
+    function calculateLayout() {
+      var time = (new Date()).getTime()
+      delta = time - timePoint
+      console.log('重新计算, 相对时间：', delta);
+      timePoint = timePoint
+    }
+
+    var lazyLayout = _.debounce(calculateLayout, 300, true)
+    $(window).resize(lazyLayout)
+    </script>
+  </body>
+</html>
