@@ -1,0 +1,18 @@
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+  border: 20px solid #0ccdde;
+  background-color: red;
+}
+.box.border-box {
+  box-sizing: border-box;
+}
+.box.content-box {
+  box-sizing: content-box;
+}
+.box.padding-box {
+  box-sizing: padding-box;
+}
