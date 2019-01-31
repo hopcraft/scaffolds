@@ -1,40 +1,18 @@
-.mouth {
-  stroke-dasharray: 60, 95;
-  stroke-dashoffset: 0;
-  animation: mouth 0.8s linear infinite;
-  /*transform-origin: 50% 50%;*/
-  transform-origin: 50px 70px;
-  transform: rotate(-80deg);
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+  border: 20px solid #0ccdde;
+  background-color: red;
 }
-.eye {
-  opacity: 1;
+.box.border-box {
+  box-sizing: border-box;
 }
-
-@keyframes mouth {
-  0% {
-    transform: rotate(-80deg);
-    stroke-dasharray: 60, 95;
-    stroke-dashoffset: 0;
-  }
-  40% {
-    transform: rotate(280deg);
-    stroke-dasharray: 60, 95;
-    stroke-dashoffset: 0;
-  }
-  70%, 100% {
-    transform: rotate(280deg);
-    stroke-dashoffset: -23;
-    stroke-dasharray: 42, 95;
-  }
+.box.content-box {
+  box-sizing: content-box;
 }
-@keyframes eye {
-  0% {
-    opacity: 0;
-  }
-  49% {
-    opacity: 0;
-  }
-  50%, 100% {
-    opacity: 1;
-  }
+.box.padding-box {
+  box-sizing: padding-box;
 }

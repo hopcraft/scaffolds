@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.animate-box {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: #0ccdde;
+  transition: transform 1s ease 0.2s, background 2s, border-radius 2s;
+}
+
+.animate-box:hover {
+  border-radius: 50%;
+  transform: translateX(20px) rotateX(-45deg) scaleY(1.5) skewX(-45deg);
+  background-color: #ff77ff;
+  transition: transform 1s ease 0.2s, background 2s, border-radius 2s;
+}
