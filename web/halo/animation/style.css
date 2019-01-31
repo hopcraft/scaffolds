@@ -4,11 +4,14 @@
 }
 
 .animate-box {
+  box-sizing: border-box;
   display: inline-block;
   width: 300px;
   height: 300px;
   background-color: #0ccdde;
   transition: transform 1s ease 0.2s, background 2s, border-radius 2s;
+  font-size: 0;
+  letter-spacing: 0;
 }
 
 .animate-box:hover {
@@ -16,4 +19,21 @@
   transform: translateX(20px) rotateX(-45deg) scaleY(1.5) skewX(-45deg);
   background-color: #ff77ff;
   transition: transform 1s ease 0.2s, background 2s, border-radius 2s;
+}
+
+.animate-box .ball {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  border: 1px solid gray;
+  transition: transform 2s, background 2s, border-radius 2s;
+}
+
+.animate-box:hover .ball {
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: red;
+  transform: translateX(-200px);
+  transition: transform 2s, background 2s, border-radius 2s;
 }
